@@ -17,8 +17,8 @@
 */
 #include "NVStore.h"
 
-#include <arduino.h>
-#include <eeprom.h>
+#include <Arduino.h>
+#include <EEPROM.h>
 
 NVStore::NVStore(void)
 {
