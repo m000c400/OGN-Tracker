@@ -20,7 +20,7 @@
 #define OGNPACKET_h
 
 #include <stdint.h>
-#include <arduino.h>
+#include <Arduino.h>
 
 #include "TEA.h"
 #include "ldpc.h"
@@ -102,4 +102,3 @@ class OGNPacket
 
 
 #endif 
-

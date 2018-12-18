@@ -21,7 +21,7 @@
 
 #include <stdint.h>
 
-//#include <SoftwareSerial.h>
+#include <SoftwareSerial.h>
 #include <TinyGPS++.h>
 
 class OGNGPS : public TinyGPSPlus
@@ -46,7 +46,7 @@ class OGNGPS : public TinyGPSPlus
   protected:
 				
   private:
-    //SoftwareSerial *OGNGPSStream;
+    SoftwareSerial *OGNGPSStream;
     
     int16_t LastHeading;
     int32_t LastAltitude;
@@ -57,4 +57,3 @@ class OGNGPS : public TinyGPSPlus
 
 
 #endif 
-

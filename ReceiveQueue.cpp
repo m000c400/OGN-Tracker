@@ -18,7 +18,7 @@
 
 #include "ReceiveQueue.h"
 
-#include <arduino.h>
+#include <Arduino.h>
 
 /* OGN Packet Map
 [00:03] [SSSS SSSS] [SSSS SSSS] [SSSS SSSS] [SSSS SSSS]  Sync Field 4 Bytes 0x0AF3656C
@@ -135,4 +135,3 @@ uint16_t ReceiveQueue::GetHeading(void)
   
   return (uint16_t)fHeading;
 }
-

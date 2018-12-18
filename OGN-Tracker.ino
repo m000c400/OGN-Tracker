@@ -17,7 +17,7 @@
 */
  
 #include <SPI.h>
-//#include <SoftwareSerial.h>
+#include <SoftwareSerial.h>
 #include <TinyGPS++.h>
 #include <EEPROM.h>
 #include <stdint.h>
@@ -392,6 +392,3 @@ void ProcessSerial(void)
     }  
   }
 } 
-
-
-

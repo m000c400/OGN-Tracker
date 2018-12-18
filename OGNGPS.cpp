@@ -21,8 +21,8 @@
 
 OGNGPS::OGNGPS(void):TinyGPSPlus()
 {
-  //OGNGPSStream = new SoftwareSerial(DataInPin, DataOutPin);
-  //OGNGPSStream->begin(9800);
+  OGNGPSStream = new SoftwareSerial(4, 5);
+  OGNGPSStream->begin(9800);
   TurnRate = 0;
   ClimbRate = 0;
   LastAltitude = 0;
@@ -33,13 +33,13 @@ uint8_t OGNGPS::ProcessInput(void)
 {
   uint8_t c;
   
-  //if(OGNGPSStream->available() > 0)
+  if(OGNGPSStream->available() > 0)
   {
-    //c = OGNGPSStream->read();
-    //TinyGPSPlus::encode(c);
+    c = OGNGPSStream->read();
+    TinyGPSPlus::encode(c);
     return c;
   }
-  //else
+  else
   {
     return 0;
   }
